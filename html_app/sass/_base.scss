@@ -1,0 +1,18 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $defaultFont;
+  background-color: $lightGrey;
+}
+
+.hide {
+  display: none;
+}
+
+.mobile-hide {
+  display: none;
+}

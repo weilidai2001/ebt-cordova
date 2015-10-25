@@ -1,0 +1,11 @@
+.header-container {
+  position: fixed;
+  top: 0;
+  height: 170px;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  @include responsive(width, 400px, 380px, 300px);
+
+  z-index: 9999;
+}

@@ -1,0 +1,16 @@
+// -----------------------------------------------------
+// Tag
+// -----------------------------------------------------
+.tag {
+  border: solid 3px #cccdcf;
+  border-radius: 25px;
+  background-color: #cccdcf;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+
+  &.tag-hover:hover {
+    background-color: transparent;
+    color: #cccdcf;
+  }
+}
