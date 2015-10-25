@@ -19,7 +19,7 @@
     specific language governing permissions and limitations
     under the License.
 -->
-<html>
+<html ng-app="mainApp">
     <head>
         <meta charset="utf-8" />
         <meta name="format-detection" content="telephone=no" />
@@ -27,11 +27,19 @@
         <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
         <link rel="stylesheet" type="text/css" href="css/screen.css" />
+
         <script src="js/libs/jquery-2.1.4.min.js"></script>
+        <script src="js/libs/angular.min.js"></script>
+
+        <script src="js/directives/daily-spotlight.js"></script>
+        <script src="js/app.js"></script>
+
         <title>EveryBrilliantThing</title>
     </head>
     <body>
-        <h1>EveryBrilliantThing</h1>
+        <div class="header-container">
+            <daily-spotlight></daily-spotlight>
+        </div>
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
         <script type="text/javascript">

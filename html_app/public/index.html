@@ -1,24 +1,19 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" ng-app="mainApp">
 <head>
     <meta charset="UTF-8">
     <title>EveryBrilliantThing</title>
 
     <link rel="stylesheet" type="text/css" href="css/screen.css">
     <script src="js/libs/jquery-2.1.4.min.js"></script>
+    <script src="js/libs/angular.min.js"></script>
+
+    <script src="js/directives/daily-spotlight.js"></script>
+    <script src="js/app.js"></script>
 </head>
 <body>
     <div class="header-container">
-        <div class="daily-spotlight">
-            <img src="img/post-it/postit-dailyspotlight.png">
-
-            <div class="post-text">
-                <div class="title">EVERY BRILLIANT THING
-                    <span class="mobile-hide">- 'O THE DAY</span>
-                </div>
-                <div class="content">{{spotlightPost.body}}</div>
-            </div>
-        </div>
+        <daily-spotlight></daily-spotlight>
     </div>
 
 </body>
