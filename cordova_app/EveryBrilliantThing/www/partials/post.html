@@ -1,14 +1,13 @@
 <div class="post post--style-{{data.style}}-color-{{data.color}}">
-  <div class="post-it-top">
-    <span class="post-it-id">#{{data._id}}</span>
-    <span class="post-it-tag tag" ng-if="data.tag">{{data.tag}}</span>
-    <span class="post-it-checkbox css-checkbox">
+  <div class="post__top">
+    <span class="post__id">#{{data._id}}</span>
+    <span class="post__top__tag tag" ng-if="data.tag">{{data.tag}}</span>
+    <span class="post__top__checkbox css-checkbox">
       <input type="checkbox" name="checkbox-{{data._id}}" id="checkbox-{{data._id}}" class="css-checkbox" ng-click="check()">
       <label for="checkbox-{{data._id}}" class="css-label"></label>
     </span>
   </div>
-  <div class="post-it-body">
-    <p class="post-it-text">{{data.body}}</p>
+  <div class="post__body">
+    <p>{{data.body}}</p>
   </div>
-  <div class="post-it-bottom"></div>
 </div>
