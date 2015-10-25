@@ -3106,4 +3106,108 @@ body {
   background: url("../img/post-it/postit1-1.png") no-repeat;
 }
 
+.post--style-1-color-2 {
+  background: url("../img/post-it/postit1-2.png") no-repeat;
+}
+
+.post--style-1-color-3 {
+  background: url("../img/post-it/postit1-3.png") no-repeat;
+}
+
+.post--style-1-color-4 {
+  background: url("../img/post-it/postit1-4.png") no-repeat;
+}
+
+.post--style-1-color-5 {
+  background: url("../img/post-it/postit1-5.png") no-repeat;
+}
+
+.post--style-1-color-6 {
+  background: url("../img/post-it/postit1-6.png") no-repeat;
+}
+
+.post--style-2-color-1 {
+  background: url("../img/post-it/postit2-1.png") no-repeat;
+}
+
+.post--style-2-color-2 {
+  background: url("../img/post-it/postit2-2.png") no-repeat;
+}
+
+.post--style-2-color-3 {
+  background: url("../img/post-it/postit2-3.png") no-repeat;
+}
+
+.post--style-2-color-4 {
+  background: url("../img/post-it/postit2-4.png") no-repeat;
+}
+
+.post--style-2-color-5 {
+  background: url("../img/post-it/postit2-5.png") no-repeat;
+}
+
+.post--style-2-color-6 {
+  background: url("../img/post-it/postit2-6.png") no-repeat;
+}
+
+.post--style-3-color-1 {
+  background: url("../img/post-it/postit3-1.png") no-repeat;
+}
+
+.post--style-3-color-2 {
+  background: url("../img/post-it/postit3-2.png") no-repeat;
+}
+
+.post--style-3-color-3 {
+  background: url("../img/post-it/postit3-3.png") no-repeat;
+}
+
+.post--style-3-color-4 {
+  background: url("../img/post-it/postit3-4.png") no-repeat;
+}
+
+.post--style-3-color-5 {
+  background: url("../img/post-it/postit3-5.png") no-repeat;
+}
+
+.post--style-3-color-6 {
+  background: url("../img/post-it/postit3-6.png") no-repeat;
+}
+
+.post__top {
+  height: 40px;
+  width: 100%;
+  padding-top: 30px;
+}
+
+.post__top__id {
+  padding-left: 15px;
+}
+
+.post__top__tag {
+  margin: 5px 5px 5px 10px;
+  padding: 5px;
+  font-size: 14px;
+}
+
+.post__top__checkbox {
+  float: right;
+  margin-right: 30px;
+}
+
+.post__body {
+  height: 150px;
+  width: 100%;
+}
+
+.post__body p {
+  width: 100%;
+  height: 100%;
+  padding-top: 15px;
+  padding-left: 15px;
+  padding-right: 25px;
+  overflow-y: auto;
+  text-align: justify;
+}
+
 /*# sourceMappingURL=screen.css.map */
