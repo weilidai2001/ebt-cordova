@@ -1,0 +1,7 @@
+.content-container {
+  @include responsive(width, 400px, 380px, 300px);
+
+  margin-top: 186px;
+  margin-left: auto;
+  margin-right: auto;
+}

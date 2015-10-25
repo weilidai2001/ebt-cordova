@@ -1,0 +1,13 @@
+.post {
+  margin-bottom: 15px;
+  z-index: 50;
+
+  position: relative;
+  height: 250px;
+  background-size: 100% 100%;
+  background: url("../img/post-it/postit3-2.png") no-repeat;
+
+  &--style-1-color-1 {
+    background: url("../img/post-it/postit1-1.png") no-repeat;
+  }
+}

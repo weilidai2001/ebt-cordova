@@ -3053,7 +3053,7 @@ body {
 
 .header-container {
   position: fixed;
-  top: 0;
+  top: 20px;
   height: 170px;
   left: 50%;
   transform: translateX(-50%);
@@ -3072,6 +3072,38 @@ body {
   .header-container {
     width: 300px;
   }
+}
+
+.content-container {
+  width: 400px;
+  margin-top: 186px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media only screen and (max-width: 40em) {
+  .content-container {
+    width: 380px;
+  }
+}
+
+@media only screen and (max-width: 20em) {
+  .content-container {
+    width: 300px;
+  }
+}
+
+.post {
+  margin-bottom: 15px;
+  z-index: 50;
+  position: relative;
+  height: 250px;
+  background-size: 100% 100%;
+  background: url("../img/post-it/postit3-2.png") no-repeat;
+}
+
+.post--style-1-color-1 {
+  background: url("../img/post-it/postit1-1.png") no-repeat;
 }
 
 /*# sourceMappingURL=screen.css.map */
