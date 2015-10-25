@@ -3,7 +3,7 @@ angular.module('PostDirective', [])
 .directive('post', function() {
   return {
     templateUrl: 'partials/post.html',
-    restrict: 'E',
+    restrict: 'A',
     scope: {
       data: '='
     },

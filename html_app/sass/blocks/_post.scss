@@ -1,11 +1,25 @@
 .post {
-  margin-bottom: 15px;
-  z-index: 50;
-
   position: relative;
   height: 250px;
+  z-index: 50;
   background-size: 100% 100%;
   background: url("../img/post-it/postit3-2.png") no-repeat;
+
+  margin-bottom: -100px;
+  transition: margin-bottom 0.2s;
+
+  &:hover {
+    margin-bottom: 0;
+  }
+
+  &:nth-child(odd) {
+    left: -7px;
+  }
+
+  &:nth-child(even) {
+    left: 7px;
+  }
+
 
   @for $style from 1 through 3 {
     @for $color from 1 through 6 {
@@ -18,7 +32,8 @@
   &__top {
     height: 40px;
     width: 100%;
-    padding-top: 30px;
+    padding-top: 40px;
+    padding-left: 20px;
 
     &__id {
       padding-left: 15px;
@@ -39,6 +54,7 @@
   &__body {
     height: 150px;
     width: 100%;
+    padding-left: 10px;
 
     p {
       width: 100%;

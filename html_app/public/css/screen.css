@@ -3094,12 +3094,25 @@ body {
 }
 
 .post {
-  margin-bottom: 15px;
-  z-index: 50;
   position: relative;
   height: 250px;
+  z-index: 50;
   background-size: 100% 100%;
   background: url("../img/post-it/postit3-2.png") no-repeat;
+  margin-bottom: -100px;
+  transition: margin-bottom 0.2s;
+}
+
+.post:hover {
+  margin-bottom: 0;
+}
+
+.post:nth-child(odd) {
+  left: -7px;
+}
+
+.post:nth-child(even) {
+  left: 7px;
 }
 
 .post--style-1-color-1 {
@@ -3177,7 +3190,8 @@ body {
 .post__top {
   height: 40px;
   width: 100%;
-  padding-top: 30px;
+  padding-top: 40px;
+  padding-left: 20px;
 }
 
 .post__top__id {
@@ -3198,6 +3212,7 @@ body {
 .post__body {
   height: 150px;
   width: 100%;
+  padding-left: 10px;
 }
 
 .post__body p {
