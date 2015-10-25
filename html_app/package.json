@@ -4,7 +4,10 @@
   "description": "A Cordova app for the EveryBrilliantThing website",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js",
+    "dev": "parallelshell 'npm run watch:sass' 'node server.js'",
+    "sass": "node-sass --output-style expanded --source-map true sass/ -o public/css",
+    "watch:sass": "sane 'npm run sass' sass"
   },
   "repository": {
     "type": "git",
@@ -18,5 +21,11 @@
   "homepage": "https://github.com/weilidai2001/ebt-cordova#readme",
   "dependencies": {
     "express": "^4.13.3"
+  },
+  "devDependencies": {
+    "node-sass": "^3.4.0",
+    "parallelshell": "^2.0.0",
+    "sane": "^1.3.0",
+    "watch": "^0.16.0"
   }
 }
