@@ -5,4 +5,4 @@ var directives = angular.module('directives', [
     'NavigationDirective'
 ]);
 
-var app = angular.module('mainApp', ['directives']);
+var app = angular.module('mainApp', ['directives', 'ng-fastclick']);

@@ -3,7 +3,7 @@ angular.module('PostsContainerDirective', [])
     .directive('postsContainer', function($http) {
         return {
             templateUrl: 'partials/posts-container.html',
-            restrict: 'E',
+            restrict: 'A',
             scope: {},
             controller: function($scope, $rootScope) {
                 $scope.posts = [];

@@ -1,0 +1,20 @@
+<div class="nav"
+     ng-init="isExpanded=false;"
+     ng-class="{
+             'nav--expanded': isExpanded,
+             'nav--collapsed': !isExpanded
+             }">
+    <div class="nav__toggle" ng-click="isExpanded = !isExpanded">
+        <div class="fontastic icon-x" ng-if="isExpanded"></div>
+        <div class="fontastic icon-align-justify" ng-if="!isExpanded"></div>
+    </div>
+    <div class="nav__item" ng-show="isExpanded">
+        ADD YOUR OWN
+    </div>
+    <div class="nav__item" ng-show="isExpanded">
+        FIND OUT MORE
+    </div>
+    <div class="nav__item" ng-show="isExpanded">
+        SEARCH
+    </div>
+</div>
