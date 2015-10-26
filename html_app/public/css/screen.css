@@ -2985,6 +2985,62 @@ a {
   animation-name: slideOutUp;
 }
 
+@font-face {
+  font-family: "everybrilliantthing";
+  src: url("../fonts/everybrilliantthing.eot");
+  src: url("../fonts/everybrilliantthing.eot?#iefix") format("embedded-opentype"), url("../fonts/everybrilliantthing.woff") format("woff"), url("../fonts/everybrilliantthing.ttf") format("truetype"), url("../fonts/everybrilliantthing.svg#everybrilliantthing") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.fontastic {
+  cursor: pointer;
+  font-family: everybrilliantthing;
+  font-size: 35px;
+  text-align: center;
+}
+
+.fontastic:hover {
+  color: grey;
+}
+
+.fontastic:active {
+  font-size: 30px;
+}
+
+.fontastic[data-icon]:before {
+  font-family: "everybrilliantthing" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.fontastic[class^="icon-"]:before, .fontastic[class*=" icon-"]:before {
+  font-family: "everybrilliantthing" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.fontastic.icon-x:before {
+  content: "x";
+}
+
+.fontastic.icon-align-justify:before {
+  content: "m";
+}
+
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -2997,10 +3053,6 @@ body {
 }
 
 .hide {
-  display: none;
-}
-
-.mobile-hide {
   display: none;
 }
 
@@ -3046,7 +3098,7 @@ body {
   max-height: 150px;
 }
 
-.daily-spotlight .post-text {
+.daily-spotlight__body {
   position: absolute;
   margin: 30px 20px 20px;
 }
@@ -3253,6 +3305,42 @@ label.css-label {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+}
+
+.nav {
+  position: absolute;
+  z-index: 999;
+  margin: 10px;
+  height: 150px;
+  padding: 15px 5px 5px 25px;
+  background-color: #FFFD38;
+  right: 0;
+}
+
+.nav--expanded {
+  width: 100%;
+}
+
+.nav--collapsed {
+  width: 45px;
+}
+
+.nav__toggle {
+  position: absolute;
+  top: 10px;
+  right: 5px;
+}
+
+.nav__item {
+  width: 220px;
+  font-size: 20px;
+  margin: 5px;
+  padding-bottom: 3px;
+  border-bottom: 2px solid black;
+}
+
+.nav__item:hover {
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=screen.css.map */

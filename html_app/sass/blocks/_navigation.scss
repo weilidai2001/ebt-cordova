@@ -1,0 +1,35 @@
+.nav {
+  position: absolute;
+  z-index: 999;
+  margin: 10px;
+  height: 150px;
+  padding: 15px 5px 5px 25px;
+  background-color: $controlColour;
+  right: 0;
+
+  &--expanded {
+    width: 100%;
+  }
+
+  &--collapsed {
+    width: 45px;
+  }
+
+  &__toggle {
+    position: absolute;
+    top: 10px;
+    right: 5px;
+  }
+
+  &__item {
+    width: 220px;
+    font-size: $largeFontSize;
+    margin: 5px;
+    padding-bottom: 3px;
+    border-bottom: 2px solid black;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
