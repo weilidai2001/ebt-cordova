@@ -22,6 +22,7 @@
   }
 
   &__item {
+    display: block;
     width: 220px;
     font-size: $largeFontSize;
     margin: 5px;

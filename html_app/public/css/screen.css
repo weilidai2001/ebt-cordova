@@ -3332,6 +3332,7 @@ label.css-label {
 }
 
 .nav__item {
+  display: block;
   width: 220px;
   font-size: 20px;
   margin: 5px;
@@ -3341,6 +3342,48 @@ label.css-label {
 
 .nav__item:hover {
   cursor: pointer;
+}
+
+.about {
+  background-color: #FFF0C9;
+  margin: 188px auto;
+  padding: 10px;
+  text-align: justify;
+}
+
+@media (max-width: 376px) {
+  .about {
+    width: 300px;
+  }
+}
+
+@media (min-width: 377px) {
+  .about {
+    width: 400px;
+  }
+}
+
+.about__close-btn {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: 45px;
+  height: 45px;
+}
+
+.about h1 {
+  font-size: 26px;
+  font-weight: bold;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.about p {
+  margin-bottom: 8px;
+}
+
+.about__row {
+  padding: 15px;
 }
 
 /*# sourceMappingURL=screen.css.map */

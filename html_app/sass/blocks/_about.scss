@@ -1,0 +1,38 @@
+.about {
+  background-color: #FFF0C9;
+  margin: 188px auto;
+  padding: 10px;
+  text-align: justify;
+
+  @media (max-width: $iPhone6){
+    width: 300px;
+  }
+
+  @media (min-width: $iPhone6 + 1){
+    width: 400px;
+  }
+
+  &__close-btn {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 45px;
+    height: 45px;
+  }
+
+  h1 {
+    font-size: 26px;
+    font-weight: bold;
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+
+  p {
+    margin-bottom: 8px;
+  }
+
+  &__row {
+    padding: 15px;
+  }
+
+}
