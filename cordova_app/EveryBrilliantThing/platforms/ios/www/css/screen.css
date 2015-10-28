@@ -3056,6 +3056,10 @@ body {
   display: none;
 }
 
+.hoverable:hover {
+  cursor: pointer;
+}
+
 .tag {
   border: solid 3px #cccdcf;
   border-radius: 25px;
@@ -3455,6 +3459,98 @@ label.css-label {
   padding: 5px;
   margin: 5px;
   font-size: 18px;
+}
+
+.editor {
+  margin-bottom: 15px;
+  z-index: 50;
+  position: relative;
+  height: 250px;
+  background-image: url("/public/img/post-it/postit3-1.png");
+  background-size: 100% 100%;
+}
+
+.editor__btn-close {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  height: 40px;
+  width: 40px;
+}
+
+.editor__top {
+  height: 40px;
+  width: 100%;
+  padding-top: 30px;
+}
+
+.editor__body {
+  height: 130px;
+  width: 90%;
+  margin-top: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  font-family: "Handlee", cursive;
+  font-size: 18px;
+  outline: 0;
+  resize: none;
+}
+
+.editor__bottom {
+  height: 40px;
+  width: 100%;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.editor__bottom__control--img {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+}
+
+.editor__bottom__control--text {
+  display: inline-block;
+  transform: translateY(-14px);
+  margin-left: 10px;
+  border: solid 3px #cccdcf;
+  padding: 6px;
+  color: #cccdcf;
+  border-radius: 25px;
+  font-size: 20px;
+}
+
+.editor__color-select {
+  width: 160px;
+}
+
+.editor__color-select__collection {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.editor__style-select {
+  margin-left: 44px;
+  width: 160px;
+}
+
+.editor__style-select__collection {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.editor__tag-select__collection {
+  padding: 5px;
+  width: 200px;
+  margin: 5px 5px 5px 100px;
+  font-size: 22px;
 }
 
 /*# sourceMappingURL=screen.css.map */
