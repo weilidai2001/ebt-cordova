@@ -3386,4 +3386,17 @@ label.css-label {
   padding: 15px;
 }
 
+.tag-container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.tag-container .tag {
+  display: inline-block;
+  width: auto;
+  padding: 5px;
+  margin: 5px;
+  font-size: 18px;
+}
+
 /*# sourceMappingURL=screen.css.map */

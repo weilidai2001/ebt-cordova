@@ -8,11 +8,18 @@ angular.module('PostsContainerDirective', [])
             controller: function($scope, $rootScope) {
                 $scope.posts = [];
                 $scope.selectedPosts = [];
+                $scope.searchTag = '';
 
                 $http
-                    .get("http://everybrilliantthing.tk/rest/posts")
+                    .get('http://everybrilliantthing.tk/rest/posts')
                     .success(function (response) {
                         $scope.posts = response;
+                    });
+
+                $http
+                    .get('http://everybrilliantthing.tk/rest/tags')
+                    .success(function(response) {
+                        $scope.tags = response;
                     });
             }
         };
