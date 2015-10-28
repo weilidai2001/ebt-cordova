@@ -3390,64 +3390,6 @@ label.css-label {
   padding: 15px;
 }
 
-.search-container {
-  position: relative;
-  overflow: hidden;
-  margin: 180px auto 20px;
-}
-
-.search-container .search-icon {
-  float: left;
-  margin-right: 15px;
-  height: 40px;
-  width: 40px;
-  cursor: pointer;
-}
-
-@media (max-width: 376px) {
-  .search-container .search-icon {
-    height: 30px;
-    width: 30px;
-  }
-}
-
-.search-container .close-icon {
-  float: left;
-  margin-left: 10px;
-  height: 40px;
-  width: 40px;
-  cursor: pointer;
-}
-
-.search-container input {
-  float: left;
-  background-color: yellow;
-  border-style: none;
-  height: 32px;
-  font-size: 18px;
-  font-family: "Handlee", cursive;
-  padding: 4px;
-  outline: none;
-}
-
-@media (max-width: 376px) {
-  .search-container {
-    width: 300px;
-  }
-  .search-container input {
-    width: 200px;
-  }
-}
-
-@media (min-width: 377px) {
-  .search-container {
-    width: 400px;
-  }
-  .search-container input {
-    width: 270px;
-  }
-}
-
 .tag-container {
   width: 90%;
   margin: 0 auto;
@@ -3551,6 +3493,71 @@ label.css-label {
   width: 200px;
   margin: 5px 5px 5px 100px;
   font-size: 22px;
+}
+
+.search {
+  position: relative;
+  width: 400px;
+  overflow: hidden;
+  margin: 180px auto 20px;
+}
+
+@media only screen and (max-width: 40em) {
+  .search {
+    width: 400px;
+  }
+}
+
+@media only screen and (max-width: 20em) {
+  .search {
+    width: 300px;
+  }
+}
+
+.search__icon {
+  float: left;
+  margin-right: 15px;
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+}
+
+@media (max-width: 376px) {
+  .search__icon {
+    height: 30px;
+    width: 30px;
+  }
+}
+
+.search__input {
+  float: left;
+  width: 270px;
+  background-color: yellow;
+  border-style: none;
+  height: 32px;
+  font-size: 18px;
+  font-family: "Handlee", cursive;
+  padding: 4px;
+  outline: none;
+}
+
+@media only screen and (max-width: 40em) {
+  .search__input {
+    width: 270px;
+  }
+}
+
+@media only screen and (max-width: 20em) {
+  .search__input {
+    width: 200px;
+  }
+}
+
+.search__btn-close {
+  float: left;
+  margin-left: 10px;
+  height: 40px;
+  width: 40px;
 }
 
 /*# sourceMappingURL=screen.css.map */
