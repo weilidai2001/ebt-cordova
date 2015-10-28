@@ -1,1 +1,4 @@
-<div post selected='selectedPosts' class="post post--style-{{post.style}}-color-{{post.color}}" data="post" ng-repeat="post in posts"></div>
+<div>
+  <div search visible="false" query="searchFilter"></div>
+  <div post selected='selectedPosts' class="post post--style-{{post.style}}-color-{{post.color}}" data="post" ng-repeat="post in posts | filter: { body: searchFilter, tag: searchTag}">></div>
+</div>
