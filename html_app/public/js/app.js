@@ -4,7 +4,8 @@ var directives = angular.module('directives', [
   'PostsContainerDirective',
   'NavigationDirective',
   'SearchDirective',
-  'AboutDirective'
+  'AboutDirective',
+  'TagContainerDirective'
 ]);
 
 var services = angular.module('services', [

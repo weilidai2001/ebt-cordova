@@ -1,0 +1,12 @@
+.tag-container {
+  width: 90%;
+  margin: 0 auto;
+
+  .tag {
+    display: inline-block;
+    width: auto;
+    padding: 5px;
+    margin: 5px;
+    font-size: 18px;
+  }
+}

@@ -3,7 +3,8 @@ var directives = angular.module('directives', [
     'PostDirective',
     'PostsContainerDirective',
     'NavigationDirective',
-    'AboutDirective'
+    'AboutDirective',
+    'TagContainerDirective'
 ]);
 
 var app = angular.module('mainApp', ['directives', 'ngRoute', 'ng-fastclick']);
