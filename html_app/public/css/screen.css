@@ -3060,6 +3060,78 @@ body {
   cursor: pointer;
 }
 
+.post-background--style-1-color-1 {
+  background: url("../img/post-it/postit1-1.png") no-repeat;
+}
+
+.post-background--style-1-color-2 {
+  background: url("../img/post-it/postit1-2.png") no-repeat;
+}
+
+.post-background--style-1-color-3 {
+  background: url("../img/post-it/postit1-3.png") no-repeat;
+}
+
+.post-background--style-1-color-4 {
+  background: url("../img/post-it/postit1-4.png") no-repeat;
+}
+
+.post-background--style-1-color-5 {
+  background: url("../img/post-it/postit1-5.png") no-repeat;
+}
+
+.post-background--style-1-color-6 {
+  background: url("../img/post-it/postit1-6.png") no-repeat;
+}
+
+.post-background--style-2-color-1 {
+  background: url("../img/post-it/postit2-1.png") no-repeat;
+}
+
+.post-background--style-2-color-2 {
+  background: url("../img/post-it/postit2-2.png") no-repeat;
+}
+
+.post-background--style-2-color-3 {
+  background: url("../img/post-it/postit2-3.png") no-repeat;
+}
+
+.post-background--style-2-color-4 {
+  background: url("../img/post-it/postit2-4.png") no-repeat;
+}
+
+.post-background--style-2-color-5 {
+  background: url("../img/post-it/postit2-5.png") no-repeat;
+}
+
+.post-background--style-2-color-6 {
+  background: url("../img/post-it/postit2-6.png") no-repeat;
+}
+
+.post-background--style-3-color-1 {
+  background: url("../img/post-it/postit3-1.png") no-repeat;
+}
+
+.post-background--style-3-color-2 {
+  background: url("../img/post-it/postit3-2.png") no-repeat;
+}
+
+.post-background--style-3-color-3 {
+  background: url("../img/post-it/postit3-3.png") no-repeat;
+}
+
+.post-background--style-3-color-4 {
+  background: url("../img/post-it/postit3-4.png") no-repeat;
+}
+
+.post-background--style-3-color-5 {
+  background: url("../img/post-it/postit3-5.png") no-repeat;
+}
+
+.post-background--style-3-color-6 {
+  background: url("../img/post-it/postit3-6.png") no-repeat;
+}
+
 .tag {
   border: solid 3px #cccdcf;
   border-radius: 25px;
@@ -3154,7 +3226,6 @@ body {
   height: 250px;
   z-index: 50;
   background-size: 100% 100%;
-  background: url("../img/post-it/postit3-2.png") no-repeat;
   margin-bottom: -100px;
   transition: margin-bottom 0.2s;
 }
@@ -3169,78 +3240,6 @@ body {
 
 .post:nth-child(even) {
   left: 7px;
-}
-
-.post--style-1-color-1 {
-  background: url("../img/post-it/postit1-1.png") no-repeat;
-}
-
-.post--style-1-color-2 {
-  background: url("../img/post-it/postit1-2.png") no-repeat;
-}
-
-.post--style-1-color-3 {
-  background: url("../img/post-it/postit1-3.png") no-repeat;
-}
-
-.post--style-1-color-4 {
-  background: url("../img/post-it/postit1-4.png") no-repeat;
-}
-
-.post--style-1-color-5 {
-  background: url("../img/post-it/postit1-5.png") no-repeat;
-}
-
-.post--style-1-color-6 {
-  background: url("../img/post-it/postit1-6.png") no-repeat;
-}
-
-.post--style-2-color-1 {
-  background: url("../img/post-it/postit2-1.png") no-repeat;
-}
-
-.post--style-2-color-2 {
-  background: url("../img/post-it/postit2-2.png") no-repeat;
-}
-
-.post--style-2-color-3 {
-  background: url("../img/post-it/postit2-3.png") no-repeat;
-}
-
-.post--style-2-color-4 {
-  background: url("../img/post-it/postit2-4.png") no-repeat;
-}
-
-.post--style-2-color-5 {
-  background: url("../img/post-it/postit2-5.png") no-repeat;
-}
-
-.post--style-2-color-6 {
-  background: url("../img/post-it/postit2-6.png") no-repeat;
-}
-
-.post--style-3-color-1 {
-  background: url("../img/post-it/postit3-1.png") no-repeat;
-}
-
-.post--style-3-color-2 {
-  background: url("../img/post-it/postit3-2.png") no-repeat;
-}
-
-.post--style-3-color-3 {
-  background: url("../img/post-it/postit3-3.png") no-repeat;
-}
-
-.post--style-3-color-4 {
-  background: url("../img/post-it/postit3-4.png") no-repeat;
-}
-
-.post--style-3-color-5 {
-  background: url("../img/post-it/postit3-5.png") no-repeat;
-}
-
-.post--style-3-color-6 {
-  background: url("../img/post-it/postit3-6.png") no-repeat;
 }
 
 .post__top {
@@ -3408,7 +3407,6 @@ label.css-label {
   z-index: 50;
   position: relative;
   height: 250px;
-  background-image: url("/public/img/post-it/postit3-1.png");
   background-size: 100% 100%;
 }
 

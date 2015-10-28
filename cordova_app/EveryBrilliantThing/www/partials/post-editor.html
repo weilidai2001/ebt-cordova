@@ -1,11 +1,11 @@
-<div class="editor animated bounceInUp" ng-style="{'background-image':'url(/img/post-it/postit' + style + '-' + color + '.png)'}">
+<div class="editor animated bounceInUp post-background--style-{{style}}-color-{{color}}">
     <div class="editor__top">
         <span data-icon="x" class="fontastic icon-x editor__btn-close" ng-click="hidePostEditor()"></span>
     </div>
     <textarea class="editor__body" ng-model="postBody" placeholder="type here..."></textarea>
     <div class="editor__bottom">
-        <img class="editor__bottom__control--img hoverable" ng-src="img/Post-editor/Style/style-{{style}}.png" ng-click="styleSelectionVisible = !styleSelectionVisible; colorSelectionVisible = false; tagSelectionVisible = false;">
-        <img class="editor__bottom__control--img hoverable" ng-src="img/Post-editor/Colour/colour-{{color}}.png" ng-click="colorSelectionVisible = !colorSelectionVisible; styleSelectionVisible = false; tagSelectionVisible = false;">
+        <img class="editor__bottom__control--img hoverable" ng-src="img/post-editor/style/style-{{style}}.png" ng-click="styleSelectionVisible = !styleSelectionVisible; colorSelectionVisible = false; tagSelectionVisible = false;">
+        <img class="editor__bottom__control--img hoverable" ng-src="img/post-editor/colour/colour-{{color}}.png" ng-click="colorSelectionVisible = !colorSelectionVisible; styleSelectionVisible = false; tagSelectionVisible = false;">
         <div class="editor__bottom__control--text hoverable" ng-init="selectedTag = 'Add a tag'" ng-click="tagSelectionVisible = !tagSelectionVisible; styleSelectionVisible = false; colorSelectionVisible = false;">{{selectedTag}}</div>
         <div class="editor__bottom__control--text hoverable" ng-click="submitPost(postBody)">ADD</div>
     </div>

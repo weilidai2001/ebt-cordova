@@ -18,3 +18,11 @@ body {
     cursor: pointer;
   }
 }
+
+@for $style from 1 through 3 {
+  @for $color from 1 through 6 {
+    .post-background--style-#{$style}-color-#{$color} {
+      background: url("../img/post-it/postit#{$style}-#{$color}.png") no-repeat;
+    }
+  }
+}

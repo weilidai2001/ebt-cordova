@@ -8,15 +8,6 @@ angular.module('SearchDirective', ['SearchService'])
         query: '=query'
       },
       controller: function($scope, $rootScope, Search) {
-        $rootScope.$watch(
-          function() {
-            return Search.isVisible();
-          },
-          function(newVal) {
-            $scope.visible = newVal;
-          }
-        );
-
         $scope.hideSearch = function() {
           $scope.query = '';
           Search.hide();

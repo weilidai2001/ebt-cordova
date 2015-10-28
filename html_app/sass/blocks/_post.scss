@@ -3,7 +3,6 @@
   height: 250px;
   z-index: 50;
   background-size: 100% 100%;
-  background: url("../img/post-it/postit3-2.png") no-repeat;
 
   margin-bottom: -100px;
   transition: margin-bottom 0.2s;
@@ -18,15 +17,6 @@
 
   &:nth-child(even) {
     left: 7px;
-  }
-
-
-  @for $style from 1 through 3 {
-    @for $color from 1 through 6 {
-      &--style-#{$style}-color-#{$color} {
-        background: url("../img/post-it/postit#{$style}-#{$color}.png") no-repeat;
-      }
-    }
   }
 
   &__top {
