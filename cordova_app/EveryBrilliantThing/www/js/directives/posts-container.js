@@ -7,6 +7,7 @@ angular.module('PostsContainerDirective', [])
             scope: {},
             controller: function($scope, $rootScope) {
                 $scope.posts = [];
+                $scope.selectedPosts = [];
 
                 $http
                     .get("http://everybrilliantthing.tk/rest/posts")
