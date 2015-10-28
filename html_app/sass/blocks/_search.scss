@@ -1,9 +1,10 @@
-.search-container {
+.search {
   position: relative;
+  @include responsive(width, 400px, 400px, 300px);
   overflow: hidden;
   margin: 180px auto 20px;
 
-  .search-icon {
+  &__icon {
     float: left;
     margin-right: 15px;
     height: 40px;
@@ -15,16 +16,9 @@
     }
   }
 
-  .close-icon {
+  &__input {
     float: left;
-    margin-left: 10px;
-    height: 40px;
-    width: 40px;
-    cursor: pointer;
-  }
-
-  input {
-    float: left;
+    @include responsive(width, 270px, 270px, 200px);
     background-color: yellow;
     border-style: none;
     height: 32px;
@@ -34,19 +28,10 @@
     outline: none;
   }
 
-  @media (max-width: $iPhone6){
-    width: 300px;
-
-    input {
-      width: 200px;
-    }
-  }
-
-  @media (min-width: $iPhone6 + 1){
-    width: 400px;
-
-    input {
-      width: 270px;
-    }
+  &__btn-close {
+    float: left;
+    margin-left: 10px;
+    height: 40px;
+    width: 40px;
   }
 }
