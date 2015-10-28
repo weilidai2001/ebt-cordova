@@ -1,13 +1,15 @@
-angular.module('NavigationDirective', [])
-    .directive('navigation', function () {
-        return {
-            templateUrl: 'partials/navigation.html',
-            restrict: 'A',
-            scope: {
+angular.module('NavigationDirective', ['SearchService'])
+  .directive('navigation', function() {
+    return {
+      templateUrl: 'partials/navigation.html',
+      restrict: 'A',
+      scope: {
 
-            },
-            controller: function ($scope) {
-
-            }
+      },
+      controller: function($scope, Search) {
+        $scope.showSearch = function() {
+          Search.show();
         };
-    });
+      }
+    };
+  });
