@@ -3386,6 +3386,64 @@ label.css-label {
   padding: 15px;
 }
 
+.search-container {
+  position: relative;
+  overflow: hidden;
+  margin: 180px auto 20px;
+}
+
+.search-container .search-icon {
+  float: left;
+  margin-right: 15px;
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+}
+
+@media (max-width: 376px) {
+  .search-container .search-icon {
+    height: 30px;
+    width: 30px;
+  }
+}
+
+.search-container .close-icon {
+  float: left;
+  margin-left: 10px;
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+}
+
+.search-container input {
+  float: left;
+  background-color: yellow;
+  border-style: none;
+  height: 32px;
+  font-size: 18px;
+  font-family: "Handlee", cursive;
+  padding: 4px;
+  outline: none;
+}
+
+@media (max-width: 376px) {
+  .search-container {
+    width: 300px;
+  }
+  .search-container input {
+    width: 200px;
+  }
+}
+
+@media (min-width: 377px) {
+  .search-container {
+    width: 400px;
+  }
+  .search-container input {
+    width: 270px;
+  }
+}
+
 .tag-container {
   width: 90%;
   margin: 0 auto;

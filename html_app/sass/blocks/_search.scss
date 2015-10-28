@@ -1,0 +1,52 @@
+.search-container {
+  position: relative;
+  overflow: hidden;
+  margin: 180px auto 20px;
+
+  .search-icon {
+    float: left;
+    margin-right: 15px;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    @media (max-width: $iPhone6){
+      height: 30px;
+      width: 30px;
+    }
+  }
+
+  .close-icon {
+    float: left;
+    margin-left: 10px;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+  }
+
+  input {
+    float: left;
+    background-color: yellow;
+    border-style: none;
+    height: 32px;
+    font-size: $defaultFontSize;
+    font-family: $defaultFont;
+    padding: 4px;
+    outline: none;
+  }
+
+  @media (max-width: $iPhone6){
+    width: 300px;
+
+    input {
+      width: 200px;
+    }
+  }
+
+  @media (min-width: $iPhone6 + 1){
+    width: 400px;
+
+    input {
+      width: 270px;
+    }
+  }
+}
