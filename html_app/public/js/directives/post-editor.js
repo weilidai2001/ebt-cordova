@@ -50,8 +50,8 @@ angular.module('PostEditorDirective', [])
                         body: postBody
                     };
                     resetPostEditor();
-                    $scope.submit({
-                        postBody: post
+                    $http.post(paths.postsEndpoint, post).success(function(data, status){
+                        console.log('data:', data, 'status:', status)
                     });
                 };
 
