@@ -1,6 +1,6 @@
 angular.module('PostEditorDirective', [])
 
-    .directive('postEditor', ['$http', '$window', function($http, $window) {
+    .directive('postEditor', ['$http', '$window', '$location', function($http, $window, $location) {
         return {
             templateUrl: 'partials/post-editor.html',
             restrict: 'A',
@@ -51,7 +51,8 @@ angular.module('PostEditorDirective', [])
                     };
                     resetPostEditor();
                     $http.post(paths.postsEndpoint, post).success(function(data, status){
-                        console.log('data:', data, 'status:', status)
+                        console.log('data:', data, 'status:', status);
+                        $location.path("/").search({goto: data.newId});
                     });
                 };
 
