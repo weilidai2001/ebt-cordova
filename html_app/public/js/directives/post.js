@@ -11,8 +11,6 @@ angular.module('PostDirective', [])
         link: function($scope, elem){
           elem.ready(function(){
             if($scope.data._id == $routeParams.goto){
-              console.log("Found top", $(elem).offset().top);
-
               $('html, body').animate({
                 scrollTop: $(elem).offset().top - 200
               }, 500)
