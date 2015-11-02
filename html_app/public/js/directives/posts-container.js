@@ -1,10 +1,10 @@
 angular.module('PostsContainerDirective', ['SearchService'])
-  .directive('postsContainer', ['$http', '$routeParams', function ($http, $routeParams) {
+  .directive('postsContainer', ['$http', '$routeParams', function($http, $routeParams) {
     return {
       templateUrl: 'partials/posts-container.html',
       restrict: 'A',
       scope: {},
-      controller: function ($scope, $rootScope, Search) {
+      controller: function($scope, $rootScope, Search) {
         $scope.posts = [];
         $scope.selectedPosts = [];
         $scope.searchFilter = '';
@@ -15,28 +15,28 @@ angular.module('PostsContainerDirective', ['SearchService'])
         function filterByUrlQueryParams() {
           if ($routeParams.ids) {
             var visibleIds = $routeParams.ids.split("-");
-            angular.forEach($scope.posts, function (post) {
+            angular.forEach($scope.posts, function(post) {
               post.visible = visibleIds.indexOf(post._id.toString()) > -1;
             });
           } else {
-            angular.forEach($scope.posts, function (post) {
+            angular.forEach($scope.posts, function(post) {
               post.visible = true;
             });
           }
         }
 
         $rootScope.$watch(
-          function () {
+          function() {
             return Search.isVisible();
           },
-          function (newVal) {
+          function(newVal) {
             $scope.searchVisible = newVal;
           }
         );
 
         $http
           .get('http://everybrilliantthing.tk/rest/posts')
-          .success(function (response) {
+          .success(function(response) {
             $scope.posts = response;
             filterByUrlQueryParams();
             $scope.tagsVisible = !$routeParams.ids;
@@ -44,7 +44,7 @@ angular.module('PostsContainerDirective', ['SearchService'])
 
         $http
           .get('http://everybrilliantthing.tk/rest/tags')
-          .success(function (response) {
+          .success(function(response) {
             $scope.tags = response;
           });
       }

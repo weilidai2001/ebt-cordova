@@ -3558,4 +3558,31 @@ label.css-label {
   width: 40px;
 }
 
+.scroll-top {
+  position: fixed;
+  bottom: 20px;
+  right: 30%;
+  width: 70px;
+  height: 70px;
+  cursor: pointer;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  outline: 0;
+  background: url("../img/scroll-to-top.png") no-repeat;
+  background-size: cover;
+}
+
+@media only screen and (max-width: 40em) {
+  .scroll-top {
+    right: 20px;
+  }
+}
+
+@media only screen and (max-width: 20em) {
+  .scroll-top {
+    right: 20px;
+  }
+}
+
 /*# sourceMappingURL=screen.css.map */

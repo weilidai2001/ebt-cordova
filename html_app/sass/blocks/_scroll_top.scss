@@ -1,0 +1,19 @@
+// -----------------------------------------------------
+// Scroll Top Button
+// -----------------------------------------------------
+
+.scroll-top {
+  position: fixed;
+  bottom: 20px;
+  z-index: 100;
+  @include responsive(right, 30%, 20px, 20px);
+  width: 70px;
+  height: 70px;
+  cursor: pointer;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  outline: 0;
+  background: url('../img/scroll-to-top.png') no-repeat;
+  background-size: cover;
+}

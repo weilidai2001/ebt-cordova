@@ -1,0 +1,31 @@
+<div class="editor animated bounceInUp post-background--style-{{style}}-color-{{color}}">
+    <div class="editor__top">
+        <a href="#/" class="fontastic icon-x editor__btn-close"></a>
+    </div>
+    <textarea class="editor__body" ng-model="postBody" placeholder="type here..."></textarea>
+    <div class="editor__bottom">
+        <img class="editor__bottom__control--img hoverable" ng-src="img/post-editor/style/style-{{style}}.png" ng-click="styleSelectionVisible = !styleSelectionVisible; colorSelectionVisible = false; tagSelectionVisible = false;">
+        <img class="editor__bottom__control--img hoverable" ng-src="img/post-editor/colour/colour-{{color}}.png" ng-click="colorSelectionVisible = !colorSelectionVisible; styleSelectionVisible = false; tagSelectionVisible = false;">
+        <div class="editor__bottom__control--text hoverable" ng-init="selectedTag = 'Add a tag'" ng-click="tagSelectionVisible = !tagSelectionVisible; styleSelectionVisible = false; colorSelectionVisible = false;">{{selectedTag}}</div>
+        <div class="editor__bottom__control--text hoverable" ng-click="submitPost(postBody)">ADD</div>
+    </div>
+
+    <div class="editor__color-select" ng-show="colorSelectionVisible">
+        <img class="editor__color-select__collection" ng-click="setColor(1)" ng-src="img/post-editor/colour/colour-1.png" />
+        <img class="editor__color-select__collection" ng-click="setColor(2)" ng-src="img/post-editor/colour/colour-2.png" />
+        <img class="editor__color-select__collection" ng-click="setColor(3)" ng-src="img/post-editor/colour/colour-3.png" />
+        <img class="editor__color-select__collection" ng-click="setColor(4)" ng-src="img/post-editor/colour/colour-4.png" />
+        <img class="editor__color-select__collection" ng-click="setColor(5)" ng-src="img/post-editor/colour/colour-5.png" />
+        <img class="editor__color-select__collection" ng-click="setColor(6)" ng-src="img/post-editor/colour/colour-6.png" />
+    </div>
+
+    <div class="editor__style-select" ng-show="styleSelectionVisible">
+        <img class="editor__style-select__collection" ng-click="setStyle(1)" ng-src="img/post-editor/style/style-1.png" />
+        <img class="editor__style-select__collection" ng-click="setStyle(2)" ng-src="img/post-editor/style/style-2.png" />
+        <img class="editor__style-select__collection" ng-click="setStyle(3)" ng-src="img/post-editor/style/style-3.png" />
+    </div>
+
+    <div class="editor__tag-select" ng-show="tagSelectionVisible">
+        <div class="editor__tag-select__collection tag tag-hover" ng-click="setTag($event)" ng-repeat="tag in tags">{{tag}}</div>
+    </div>
+</div>
