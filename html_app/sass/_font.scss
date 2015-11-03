@@ -3,3 +3,16 @@
 $defaultFont: 'Handlee', cursive;
 $defaultFontSize: 18px;
 $largeFontSize: 20px;
+
+.fontastic {
+  cursor: pointer;
+  font-family: everybrilliantthing;
+  font-size: 35px;
+  text-align: center;
+  &:hover {
+    color: grey;
+  }
+  &:active {
+    font-size: 30px;
+  }
+}

@@ -2993,6 +2993,56 @@ a {
   font-style: normal;
 }
 
+[data-icon]:before {
+  font-family: "everybrilliantthing" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: "everybrilliantthing" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-share-instruction:before {
+  content: "a";
+}
+
+.icon-share:before {
+  content: "b";
+}
+
+.icon-ebt-app-link:before {
+  content: "c";
+}
+
+.icon-ebt-app-tag:before {
+  content: "d";
+}
+
+.icon-x:before {
+  content: "f";
+}
+
+.icon-align-justify:before {
+  content: "e";
+}
+
 .fontastic {
   cursor: pointer;
   font-family: everybrilliantthing;
@@ -3006,39 +3056,6 @@ a {
 
 .fontastic:active {
   font-size: 30px;
-}
-
-.fontastic[data-icon]:before {
-  font-family: "everybrilliantthing" !important;
-  content: attr(data-icon);
-  font-style: normal !important;
-  font-weight: normal !important;
-  font-variant: normal !important;
-  text-transform: none !important;
-  speak: none;
-  line-height: 1;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-.fontastic[class^="icon-"]:before, .fontastic[class*=" icon-"]:before {
-  font-family: "everybrilliantthing" !important;
-  font-style: normal !important;
-  font-weight: normal !important;
-  font-variant: normal !important;
-  text-transform: none !important;
-  speak: none;
-  line-height: 1;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-.fontastic.icon-x:before {
-  content: "x";
-}
-
-.fontastic.icon-align-justify:before {
-  content: "m";
 }
 
 * {
