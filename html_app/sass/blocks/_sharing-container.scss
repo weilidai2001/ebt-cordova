@@ -1,0 +1,67 @@
+.sharing-container {
+  display: block;
+  width: 500px;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 100;
+  padding: 15px;
+  overflow: hidden;
+
+  @include responsive(width, 500px, 90%, 90%);
+
+  &__clipboard {
+    width: 100%;
+    height: 100px;
+    background-size: cover;
+    background: url('../img/sharing.png') no-repeat;
+    padding-top: 37px;
+
+    &__share-icon {
+      float: left;
+      margin-left: 20px;
+    }
+
+    &__text {
+      float: left;
+      margin-left: 10px;
+    }
+
+    &__url {
+      float: left;
+      width: 200px;
+      font-size: 16px;
+      border: 0px solid #000000;
+      border-bottom-width: 2px;
+      background-color: transparent;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+
+    &__close-btn {
+      float: left;
+    }
+  }
+
+  &__info {
+    width: 100%;
+    height: 100px;
+    margin-top: -20px;
+    padding-top: 30px;
+    margin-left: 12px;
+    background-size: cover;
+    background: url('../img/sharing-info.png') no-repeat;
+    overflow: hidden;
+
+    &__icon {
+      float: left;
+      margin-left: 20px;
+    }
+
+    &__text {
+      float: left;
+      width: 350px;
+      margin-left: 10px;
+    }
+  }
+}
