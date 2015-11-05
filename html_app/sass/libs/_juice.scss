@@ -354,17 +354,8 @@ $breakpoints: (
     &::-moz-placeholder {
       color: $color;
     }
-    &::-ms-input-placeholder {
-      color: $color;
-    }
-    &::placeholder {
-      color: $color;
-    }
   }
   @else {
-    &::placeholder {
-      color: $color;
-    }
   }
 }
 
@@ -594,44 +585,6 @@ $breakpoints: (
 }
 @mixin bottom-right {
   @include trbl(null,0,0,null);
-}
-
-// Preload Images
-// Credit: http://codepen.io/pixelass/details/vEKZRq
-// -------------------------------------------------
-@mixin image-preload($preload: run) {
-  @if not variable-exists(_preload-image-list) {
-    $_preload-image-list: ()!global;
-  }
-  @if not variable-exists(_preload-image-urls) {
-    $_preload-image-urls: ()!global;
-  }
-  @if not variable-exists(_preload-images-loaded) {
-    $_preload-images-loaded: false!global;
-  }
-  @if $preload == run and not $_preload-images-loaded {
-    $_preload-images-loaded: true!global;
-    html:after {
-      content: '';
-      display: none;
-      background-image: $_preload-image-urls;
-    }
-  } @else {
-    $_preload-image-list: join($preload, $_preload-image-list)!global;
-    $image-urls: ();
-    @if length($_preload-image-list) > 0 {
-      @for $i from 1 through length($_preload-image-list) {
-        $image-urls: join(url(#{nth($_preload-image-list,$i)}), $image-urls);
-    }
-    $result: ();
-    @each $item in $image-urls {
-      @if not index($result, $item) {
-        $result: append($result, $item, comma);
-      }
-    }
-    $_preload-image-urls: $result!global;
-  }
-}
 }
 
 // --------------------------------------------------------------------

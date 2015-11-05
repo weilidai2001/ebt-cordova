@@ -4,7 +4,14 @@ angular.module('SharingContainerDirective', [])
     return {
       templateUrl: 'partials/sharing-container.html',
       restrict: 'A',
-      controller: function() {
+      scope: {
+        selected: '='
+      },
+      controller: function($scope, $rootScope) {
+        $scope.close = function(){
+          $scope.selected = [];
+          $rootScope.$emit('clearCheckboxes');
         }
+      }
     };
   }]);

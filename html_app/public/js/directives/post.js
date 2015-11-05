@@ -32,6 +32,10 @@ angular.module('PostDirective', [])
           removeItemFromArray($scope.selected, $scope.data._id);
         }
       };
+
+      $rootScope.$on('clearCheckboxes', function(){
+        $scope.ticked = false;
+      });
     }
   };
 }]);
