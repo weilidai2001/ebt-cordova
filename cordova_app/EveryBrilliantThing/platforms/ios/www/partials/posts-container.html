@@ -1,3 +1,4 @@
+<div sharing-container selected="selectedPosts" ng-show="selectedPosts.length"></div>
 <div search visible="searchVisible" query="searchFilter"></div>
 <div tag-container tags="tags" query="searchTag" ng-hide="searchVisible || !tagsVisible"></div>
 <div post selected='selectedPosts' class="post post-background--style-{{post.style}}-color-{{post.color}}" data="post" ng-repeat="post in posts | filter: { body: searchFilter, tag: searchTag, visible: true}"></div>

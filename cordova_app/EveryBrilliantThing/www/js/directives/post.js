@@ -28,10 +28,16 @@ angular.module('PostDirective', [])
       $scope.updateSelected = function() {
         if ($scope.ticked) {
           $scope.selected.push($scope.data._id);
+          $rootScope.$emit('selectedPostsChange', $scope.selected);
         } else {
           removeItemFromArray($scope.selected, $scope.data._id);
+          $rootScope.$emit('selectedPostsChange', $scope.selected);
         }
       };
+
+      $rootScope.$on('clearCheckboxes', function(){
+        $scope.ticked = false;
+      });
     }
   };
 }]);

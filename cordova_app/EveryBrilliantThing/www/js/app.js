@@ -7,7 +7,8 @@ var directives = angular.module('directives', [
   'TagContainerDirective',
   'PostEditorDirective',
   'SearchDirective',
-  'ScrollTopDirective'
+  'ScrollTopDirective',
+  'SharingContainerDirective'
 ]);
 
 var services = angular.module('services', [
