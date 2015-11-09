@@ -1,6 +1,8 @@
 .tag-container {
   width: 90%;
-  margin: 0 auto;
+  height: 100px;
+  overflow-y: scroll;
+  margin-top : 46px;
 
   .tag {
     display: inline-block;

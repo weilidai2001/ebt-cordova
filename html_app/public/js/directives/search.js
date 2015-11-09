@@ -4,12 +4,24 @@ angular.module('SearchDirective', ['SearchService'])
       templateUrl: 'partials/search.html',
       restrict: 'A',
       scope: {
-        visible: '=visible',
-        query: '=query'
+        searchQuery: '=searchQuery',
+        selectedTag: '=selectedTag'
       },
       controller: function($scope, $rootScope, Search) {
+        $scope.visible = false;
+
+        $rootScope.$watch(
+          function() {
+            return Search.isVisible();
+          },
+          function(newVal) {
+            $scope.visible = newVal;
+          }
+        );
+
         $scope.hideSearch = function() {
-          $scope.query = '';
+          $scope.searchQuery = '';
+          $scope.selectedTag = '';
           Search.hide();
         };
       }

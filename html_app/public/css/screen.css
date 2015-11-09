@@ -3409,7 +3409,9 @@ label.css-label {
 
 .tag-container {
   width: 90%;
-  margin: 0 auto;
+  height: 100px;
+  overflow-y: scroll;
+  margin-top: 46px;
 }
 
 .tag-container .tag {
@@ -3515,7 +3517,7 @@ label.css-label {
   position: relative;
   width: 400px;
   overflow: hidden;
-  margin: 180px auto 20px;
+  margin: 200px auto 36px;
 }
 
 @media only screen and (max-width: 40em) {
