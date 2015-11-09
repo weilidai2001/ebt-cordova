@@ -1,20 +1,26 @@
 angular.module('TagContainerDirective', [])
 
-.directive('tagContainer', function() {
+.directive('tagContainer', function($http) {
   return {
     templateUrl: 'partials/tag-container.html',
     restrict: 'A',
     scope: {
-      tags: '=',
-      searchTag: '=query'
+      selected: '=selected'
+    },
+    link: function(scope) {
+      $http
+        .get('http://everybrilliantthing.tk/rest/tags')
+        .success(function(response) {
+          scope.tags = response;
+        });
     },
     controller: function($scope) {
-      $scope.setSearchTag = function(event) {
-        $scope.searchTag = $(event.srcElement).text();
+      $scope.setSelectedTag = function(event) {
+        $scope.selected = event.srcElement.textContent;
       };
 
-      $scope.clearSearchTag = function() {
-        $scope.searchTag = "";
+      $scope.clearSelectedTag = function() {
+        $scope.selected = '';
       };
     }
   };

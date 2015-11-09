@@ -3523,10 +3523,12 @@ label.css-label {
 .search {
   position: relative;
   width: 400px;
-  background-color: #ccc;
-  margin: 160px auto 36px;
-  height: 160px;
-  padding: 10px;
+  background: url("../img/post-it/postit2-6.png") no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  margin: 160px auto 18px;
+  height: 175px;
+  padding: 15px;
 }
 
 @media only screen and (max-width: 40em) {
@@ -3542,35 +3544,34 @@ label.css-label {
 }
 
 .search .search-box {
+  width: 270px;
   height: 40px;
-  margin-bottom: 5px;
+  margin: 0px auto;
 }
 
-.search__icon {
-  float: left;
-  margin-right: 15px;
-  height: 40px;
-  width: 40px;
-  cursor: pointer;
+@media only screen and (max-width: 40em) {
+  .search .search-box {
+    width: 270px;
+  }
 }
 
-@media (max-width: 376px) {
-  .search__icon {
-    height: 30px;
-    width: 30px;
+@media only screen and (max-width: 20em) {
+  .search .search-box {
+    width: 200px;
   }
 }
 
 .search__input {
   width: 270px;
-  background-color: transparent;
+  background: url("../img/search-icon.png") no-repeat;
+  background-size: 30px 30px;
   border-style: none;
   border-bottom: 1px solid #000;
   height: 36px;
   margin: 0px auto;
   font-size: 18px;
   font-family: "Handlee", cursive;
-  padding: 4px;
+  padding-left: 40px;
   outline: none;
 }
 
@@ -3588,9 +3589,9 @@ label.css-label {
 
 .search__btn-close {
   position: absolute;
-  right: 0px;
-  height: 40px;
-  width: 40px;
+  right: 25px;
+  height: 25px;
+  width: 25px;
 }
 
 .scroll-top {

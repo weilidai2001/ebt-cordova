@@ -9,6 +9,10 @@ angular.module('NavigationDirective', ['SearchService'])
       controller: function($scope, Search) {
         $scope.showSearch = function() {
           Search.show();
+
+          $('html, body').animate({
+            scrollTop: 0
+          }, 200);
         };
       }
     };
