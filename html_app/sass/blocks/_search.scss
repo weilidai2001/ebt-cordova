@@ -1,11 +1,18 @@
 .search {
   position: relative;
   @include responsive(width, 400px, 400px, 300px);
-  overflow: hidden;
+  background-color: #ccc;
   margin: 200px auto 36px;
+  height: 160px;
+  padding: 10px;
+
+  .search-box {
+    height: 40px;
+    margin-bottom: 5px;
+  }
 
   &__icon {
-    float: left;
+    float:left;
     margin-right: 15px;
     height: 40px;
     width: 40px;
@@ -17,11 +24,12 @@
   }
 
   &__input {
-    float: left;
     @include responsive(width, 270px, 270px, 200px);
-    background-color: yellow;
+    background-color: transparent;
     border-style: none;
-    height: 32px;
+    border-bottom: 1px solid #000;
+    height: 36px;
+    margin: 0px auto;
     font-size: $defaultFontSize;
     font-family: $defaultFont;
     padding: 4px;
@@ -29,8 +37,8 @@
   }
 
   &__btn-close {
-    float: left;
-    margin-left: 10px;
+    position: absolute;
+    right: 0px;
     height: 40px;
     width: 40px;
   }

@@ -3411,15 +3411,22 @@ label.css-label {
   width: 90%;
   height: 100px;
   overflow-y: scroll;
-  margin-top: 46px;
+  margin: 0px auto;
 }
 
 .tag-container .tag {
   display: inline-block;
-  width: auto;
+  width: 45%;
   padding: 5px;
   margin: 5px;
   font-size: 18px;
+  color: #000;
+  border-color: #000;
+  background-color: transparent;
+}
+
+.tag-container .tag-hover:hover {
+  color: white;
 }
 
 .editor {
@@ -3516,8 +3523,10 @@ label.css-label {
 .search {
   position: relative;
   width: 400px;
-  overflow: hidden;
+  background-color: #ccc;
   margin: 200px auto 36px;
+  height: 160px;
+  padding: 10px;
 }
 
 @media only screen and (max-width: 40em) {
@@ -3530,6 +3539,11 @@ label.css-label {
   .search {
     width: 300px;
   }
+}
+
+.search .search-box {
+  height: 40px;
+  margin-bottom: 5px;
 }
 
 .search__icon {
@@ -3548,11 +3562,12 @@ label.css-label {
 }
 
 .search__input {
-  float: left;
   width: 270px;
-  background-color: yellow;
+  background-color: transparent;
   border-style: none;
-  height: 32px;
+  border-bottom: 1px solid #000;
+  height: 36px;
+  margin: 0px auto;
   font-size: 18px;
   font-family: "Handlee", cursive;
   padding: 4px;
@@ -3572,8 +3587,8 @@ label.css-label {
 }
 
 .search__btn-close {
-  float: left;
-  margin-left: 10px;
+  position: absolute;
+  right: 0px;
   height: 40px;
   width: 40px;
 }
