@@ -6,3 +6,6 @@ Choose
 Or
 
 > npm run dev
+
+To compile and sign the Android app
+run ```./build --release --buildConfig build.json``` from ```directory platforms/android/cordova/```
