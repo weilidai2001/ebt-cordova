@@ -3429,6 +3429,15 @@ label.css-label {
   color: white;
 }
 
+div.tag-container::-webkit-scrollbar {
+  width: 6px;
+}
+
+div.tag-container::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background: rgba(0, 0, 0, 0.3);
+}
+
 .editor {
   margin-bottom: 15px;
   z-index: 50;
