@@ -18,9 +18,9 @@
     <allow-intent href="itms-apps:*" />
     <name>EveryBrilliantThing</name>
     <description>
-        Hello World sample application that responds to the deviceready event.
+        Every Brilliant Thing app that accompanies the play by Paines Plough
     </description>
-    <author email="support@phonegap.com" href="http://phonegap.com">
+    <author email="weilidai2001@gmail.com" href="http://everybrilliantthing.com">
         PhoneGap Team
     </author>
     <content src="index.html" />

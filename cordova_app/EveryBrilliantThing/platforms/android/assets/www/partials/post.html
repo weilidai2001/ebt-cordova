@@ -1,0 +1,11 @@
+  <div class="post__top">
+    <span class="post__id">#{{data._id}}</span>
+    <span class="post__top__tag tag" ng-if="data.tag">{{data.tag}}</span>
+    <span class="post__top__checkbox">
+      <input type="checkbox" ng-model="ticked" ng-change="updateSelected()" name="checkbox-{{data._id}}" id="checkbox-{{data._id}}" class="css-checkbox" ng-click="check()">
+      <label for="checkbox-{{data._id}}" class="css-label"></label>
+    </span>
+  </div>
+  <div class="post__body">
+    <p>{{data.body}}</p>
+  </div>

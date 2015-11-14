@@ -1,0 +1,8 @@
+{
+     "android": {
+         "release": {
+             "keystore": "EBT_Android.keystore",
+             "alias": "EBT_Android"
+         }
+     }
+ }
