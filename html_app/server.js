@@ -4,7 +4,7 @@ var express = require("express");
 var app = express();
 app.use(express.static('public'));
 
-
-app.listen(process.env.PORT || defaultPort, function() {
-
+var port = process.env.PORT || defaultPort;
+app.listen(port, function() {
+  console.log(`Connected on ${port}`);
 });
