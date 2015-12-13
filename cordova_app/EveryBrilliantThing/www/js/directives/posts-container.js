@@ -487,10 +487,8 @@ angular.module('PostsContainerDirective', ['SearchService'])
 
         $http
           .get('http://everybrilliantthing.tk/rest/posts')
-          .success(function(response) {
-            $scope.posts = response;
-            filterByUrlQueryParams();
-            $scope.tagsVisible = !$routeParams.ids;
+          .success(function(posts) {
+            loadPosts(posts)
           });
       }
     };

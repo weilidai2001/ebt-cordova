@@ -1,6 +1,15 @@
-@import url('https://fonts.googleapis.com/css?family=Handlee');
+@font-face {
+  font-family: 'Handlee-Regular';
+  src: url('../fonts/Handlee-Regular.eot');
+  src: url('../fonts/Handlee-Regular.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Handlee-Regular.woff2') format('woff2'),
+  url('../fonts/Handlee-Regular.woff') format('woff'),
+  url('../fonts/Handlee-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 
-$defaultFont: 'Handlee', cursive;
+$defaultFont: 'Handlee-Regular', cursive;
 $defaultFontSize: 18px;
 $largeFontSize: 20px;
 

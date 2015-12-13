@@ -21,7 +21,7 @@
         Every Brilliant Thing app that accompanies the play by Paines Plough
     </description>
     <author email="weilidai2001@gmail.com" href="http://everybrilliantthing.com">
-        PhoneGap Team
+        Weili Dai
     </author>
     <content src="index.html" />
     <preference name="permissions" value="none" />
