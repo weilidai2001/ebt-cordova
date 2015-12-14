@@ -6,7 +6,11 @@ angular.module('NavigationDirective', ['SearchService'])
       scope: {
 
       },
-      controller: function($scope, Search) {
+      controller: function($scope, $rootScope, Search) {
+        $scope.refresh = function() {
+          $rootScope.$emit('refresh');
+        };
+
         $scope.showSearch = function() {
           Search.show();
 

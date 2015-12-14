@@ -4,7 +4,7 @@ angular.module('PostsContainerDirective', ['SearchService'])
       templateUrl: 'partials/posts-container.html',
       restrict: 'A',
       scope: {},
-      controller: function($scope) {
+      controller: function($scope, $rootScope) {
         $scope.posts = [];
         $scope.selectedPosts = [];
         $scope.searchFilter = '';
@@ -485,11 +485,19 @@ angular.module('PostsContainerDirective', ['SearchService'])
 
         loadPosts(cachedPosts);
 
-        $http
-          .get('http://everybrilliantthing.tk/rest/posts')
-          .success(function(posts) {
-            loadPosts(posts)
-          });
+        function fetchPosts(loader){
+          $http
+            .get('http://everybrilliantthing.tk/rest/posts')
+            .success(function(posts) {
+              loader(posts)
+            });
+        }
+
+        $rootScope.$on('refresh', function(){
+          fetchPosts(loadPosts);
+        });
+
+        fetchPosts(loadPosts);
       }
     };
   }]);

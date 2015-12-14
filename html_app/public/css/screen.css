@@ -3018,28 +3018,32 @@ a {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-share-instruction:before {
-  content: "a";
-}
-
-.icon-share:before {
-  content: "b";
-}
-
 .icon-ebt-app-link:before {
-  content: "c";
+  content: "\63";
 }
 
 .icon-ebt-app-tag:before {
-  content: "d";
+  content: "\64";
 }
 
 .icon-x:before {
-  content: "f";
+  content: "\66";
 }
 
 .icon-align-justify:before {
-  content: "e";
+  content: "\65";
+}
+
+.icon-navicon-round:before {
+  content: "\67";
+}
+
+.icon-close-round:before {
+  content: "\68";
+}
+
+.icon-loop:before {
+  content: "\69";
 }
 
 @font-face {
@@ -3357,6 +3361,12 @@ label.css-label {
   position: absolute;
   top: 10px;
   right: 5px;
+}
+
+.nav__refresh {
+  position: absolute;
+  right: 5px;
+  top: 55px;
 }
 
 .nav__item {
